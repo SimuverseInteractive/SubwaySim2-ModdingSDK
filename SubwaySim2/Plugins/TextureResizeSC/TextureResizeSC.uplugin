@@ -1,0 +1,33 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.01",
+	"FriendlyName": "Texture Resize SC",
+	"Description": "A tool for resizing Textures in the Editor.",
+	"Category": "Rendering",
+	"CreatedBy": "Scionate",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/c24899ea760042709748b9853bbc946c",
+	"SupportURL": "mailto:MarketplaceSupport@scionategames.com",
+	"CanContainContent": true,
+	"Installed": true,
+	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "TextureResizeSC",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		}
+	]
+}

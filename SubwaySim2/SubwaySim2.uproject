@@ -1,0 +1,67 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.4",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "SimuverseUnreal",
+			"Type": "Runtime",
+			"LoadingPhase": "PostDefault",
+			"AdditionalDependencies": [
+				"Engine",
+				"CoreUObject",
+				"SimuverseRail",
+				"AudioCapture"
+			]
+		},
+		{
+			"Name": "SimuverseUnrealEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"AdditionalDependencies": [
+				"Engine",
+				"ComponentVisualizers",
+				"Blutility",
+				"CoreUObject",
+				"SimuverseRailEditor",
+				"SimuverseUnreal"
+			]
+		},
+		{
+			"Name": "UnrealBaseGame",
+			"Type": "Runtime",
+			"LoadingPhase": "PostDefault",
+			"AdditionalDependencies": [
+				"Engine",
+				"CoreUObject"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AsyncLoadingScreen",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/01f39767dc6b4290877f38365787cbf8"
+		},
+		{
+			"Name": "Simuverse_Rail",
+			"Enabled": true
+		},
+		{
+			"Name": "SubwaySim2_Modding",
+			"Enabled": true
+		},
+		{
+			"Name": "Simuverse_SampleModVehicle",
+			"Enabled": true
+		},
+		{
+			"Name": "Simuverse_SampleModMap",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"Windows"
+	]
+}

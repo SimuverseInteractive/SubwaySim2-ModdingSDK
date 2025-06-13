@@ -1,0 +1,9 @@
+{
+	"BuildId": "33043543",
+	"Modules": 
+	{
+		"SimuverseUnreal": "UnrealEditor-SimuverseUnreal.dll",
+		"SimuverseUnrealEditor": "UnrealEditor-SimuverseUnrealEditor.dll",
+		"UnrealBaseGame": "UnrealEditor-UnrealBaseGame.dll"
+	}
+}

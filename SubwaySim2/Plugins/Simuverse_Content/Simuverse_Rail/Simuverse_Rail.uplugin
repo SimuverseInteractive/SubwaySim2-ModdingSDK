@@ -1,0 +1,61 @@
+{
+	"FileVersion": 3,
+	"FriendlyName": "Simuverse_Rail",
+	"Version": 1.0,
+	"VersionName": "1.0",
+	"Description": "Content for Simuverse_Rail",
+	"Category": "Other",
+	"CreatedBy": "Simuverse GmbH",
+	"CreatedByURL": "https://www.simuverse.at",
+	"EnabledByDefault": false,
+	"CanContainContent": true,
+
+	"Modules": [
+		{
+			"Name": "SimuverseRail",
+			"Type": "Runtime",
+			"LoadingPhase": "PostDefault",
+			"AdditionalDependencies": [
+				"Engine",
+				"Landscape",
+				"CoreUObject",
+				"AIModule"
+			]
+		},
+		{
+			"Name": "SimuverseRailEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"AdditionalDependencies": [
+				"ComponentVisualizers",
+				"Blutility",
+				"UnrealEd",
+				"CoreUObject",
+				"Engine"
+			]
+		}
+	],
+	"LocalizationTargets": [],
+	"Plugins": [
+		{
+			"Name": "UnrealLuaJIT",
+			"Enabled": true
+		},
+		{
+			"Name": "ProceduralMeshComponent",
+			"Enabled": true
+		},
+		{
+			"Name": "Steamworks",
+			"Enabled": true
+		},
+		{
+			"Name": "GeoReferencing",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		}
+	]
+}

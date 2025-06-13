@@ -1,0 +1,8 @@
+{
+	"BuildId": "33043543",
+	"Modules": 
+	{
+		"UnrealLuaJIT": "UnrealEditor-UnrealLuaJIT.dll",
+		"UnrealLuaJITEditor": "UnrealEditor-UnrealLuaJITEditor.dll"
+	}
+}

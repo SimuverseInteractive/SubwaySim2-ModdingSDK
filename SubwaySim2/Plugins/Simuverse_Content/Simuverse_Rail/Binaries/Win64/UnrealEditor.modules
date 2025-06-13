@@ -1,0 +1,8 @@
+{
+	"BuildId": "33043543",
+	"Modules": 
+	{
+		"SimuverseRail": "UnrealEditor-SimuverseRail.dll",
+		"SimuverseRailEditor": "UnrealEditor-SimuverseRailEditor.dll"
+	}
+}

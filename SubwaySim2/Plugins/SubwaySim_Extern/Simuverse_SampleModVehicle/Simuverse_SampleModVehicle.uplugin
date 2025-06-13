@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Simuverse_SampleModVehicle",
+	"Description": "Content for Simuverse_SampleModVehicle",
+	"Category": "Other",
+	"CreatedBy": "Simuverse GmbH",
+	"CreatedByURL": "https://www.simuverse.at",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EnabledByDefault": false
+}

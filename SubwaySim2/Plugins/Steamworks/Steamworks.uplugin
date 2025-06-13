@@ -1,0 +1,34 @@
+{
+	"FileVersion" : 1,
+	
+	"FriendlyName" : "Steamworks",
+	"Version" : 1.57,
+	"VersionName" : "1.57",
+	"Description" : "Implements the Steamworks framework",
+	"Category" : "Online Platform",
+	"CreatedBy" : "Simuverse GmbH",
+	"CreatedByURL" : "https://www.simuverse.at",
+	"EnabledByDefault": false,
+
+    "Modules": [
+        {
+            "Name": "Steamworks",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "PlatformAllowList" :
+			[
+                "Win64",
+                "Mac",
+                "Linux"
+			]
+        }
+    ],
+	"LocalizationTargets": [],
+	"Plugins": [],
+	"SupportedTargetPlatforms": [
+		"Win64",
+		"Mac",
+		"Linux"
+	]
+
+}

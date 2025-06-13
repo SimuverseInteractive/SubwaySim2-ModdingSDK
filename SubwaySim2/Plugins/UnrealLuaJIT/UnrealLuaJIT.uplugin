@@ -1,0 +1,77 @@
+{
+	"FileVersion" : 1,
+	
+	"FriendlyName" : "UnrealLuaJIT",
+	"Version" : 5.1,
+	"VersionName" : "5.1",
+	"Description" : "LuaJIT for Unreal",
+	"Category" : "Online Platform",
+	"CreatedBy" : "Simuverse GmbH",
+	"CreatedByURL" : "https://www.simuverse.at",
+	"EnabledByDefault" : false,
+
+	"Modules": [
+		{
+			"Name": "UnrealLuaJIT",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList" :
+			[
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		},
+		{
+			"Name": "UnrealLuaJITEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		}
+	],
+	"LocalizationTargets": [],
+	"Plugins": [
+		{
+			"Name": "WindowsHIDInput",
+			"Enabled": true,
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "Steamworks",
+			"Enabled": true,
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "AudioCapture",
+			"Enabled": true,
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "HairStrands",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "GamepadUMGPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "AsyncLoadingScreen",
+			"Enabled": true
+		}
+	]
+
+}
