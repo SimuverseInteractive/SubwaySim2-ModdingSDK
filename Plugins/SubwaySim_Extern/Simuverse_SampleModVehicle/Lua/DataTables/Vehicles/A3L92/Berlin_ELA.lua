@@ -1,7 +1,7 @@
 --
 --
 -- SubwaySim
--- Module Berlin_ELA.lua
+-- Module SampleMod_Berlin_ELA.lua
 --
 -- short for "Integriertes Bord-Informations-System"
 -- Device that interacts with ZZA, FIS and control center
@@ -20,15 +20,15 @@
 --
 --
 
----@class Berlin_ELA : BaseClass, IBaseCabModule
-Berlin_ELA = Class("Berlin_ELA", Berlin_ELA);
+---@class SampleMod_Berlin_ELA : BaseClass, IBaseCabModule
+SampleMod_Berlin_ELA = Class("SampleMod_Berlin_ELA", SampleMod_Berlin_ELA);
 
-SavegameUtil.setDefaultPropertySerializer(Berlin_ELA,				SavegameUtil.dontSerialize);
-SavegameUtil.registerPropertySerializer(Berlin_ELA,	"isOn",			SavegameUtil.serializeRaw);
-SavegameUtil.registerPropertySerializer(Berlin_ELA,	"routeId",		SavegameUtil.serializeRaw);
-SavegameUtil.registerPropertySerializer(Berlin_ELA,	"elaDeviceNo",	SavegameUtil.serializeRaw);
-SavegameUtil.registerPropertySerializer(Berlin_ELA,	"_et_zp_blink",	SavegameUtil.serializeRaw);
-SavegameUtil.registerPropertySerializer(Berlin_ELA,	"_et_zp_on",	SavegameUtil.serializeRaw);
+SavegameUtil.setDefaultPropertySerializer(SampleMod_Berlin_ELA,				SavegameUtil.dontSerialize);
+SavegameUtil.registerPropertySerializer(SampleMod_Berlin_ELA,	"isOn",			SavegameUtil.serializeRaw);
+SavegameUtil.registerPropertySerializer(SampleMod_Berlin_ELA,	"routeId",		SavegameUtil.serializeRaw);
+SavegameUtil.registerPropertySerializer(SampleMod_Berlin_ELA,	"elaDeviceNo",	SavegameUtil.serializeRaw);
+SavegameUtil.registerPropertySerializer(SampleMod_Berlin_ELA,	"_et_zp_blink",	SavegameUtil.serializeRaw);
+SavegameUtil.registerPropertySerializer(SampleMod_Berlin_ELA,	"_et_zp_on",	SavegameUtil.serializeRaw);
 
 ---@class ELA_Device_DataTable
 ---@field elaDeviceMesh string
@@ -44,8 +44,8 @@ SavegameUtil.registerPropertySerializer(Berlin_ELA,	"_et_zp_on",	SavegameUtil.se
 ---@param cab BaseCab parent cab
 ---@param vehicle RailVehicle parent rail vehicle
 ---@param cabData RailVehicle_DataTable_CabData
----@return Berlin_ELA? instance
-function Berlin_ELA:new(cab, vehicle, cabData)
+---@return SampleMod_Berlin_ELA? instance
+function SampleMod_Berlin_ELA:new(cab, vehicle, cabData)
 	---@type ELA_Device_DataTable
 	local elaData			= cabData["ELADevice"];
 	if elaData == nil then
@@ -54,7 +54,7 @@ function Berlin_ELA:new(cab, vehicle, cabData)
 
 	self					= self:class().emptyNew(self);
 	self.cab				= cab;
-	self.a3l92CabModule		= assert(self.cab:getModule(A3L92CabModule));
+	self.SampleMod_A3L92CabModule		= assert(self.cab:getModule(SampleMod_A3L92CabModule));
 	self.vehicle			= vehicle;
 	self.elaData			= elaData;
 
@@ -100,7 +100,7 @@ function Berlin_ELA:new(cab, vehicle, cabData)
 end;
 
 --- Called when this vehicle has received a body.
-function Berlin_ELA:onBodyCreated()
+function SampleMod_Berlin_ELA:onBodyCreated()
 	local _elaDeviceMeshId		= Actor.getSceneComponent(self.vehicle,	self.elaData.elaDeviceMesh);
 	assert(_elaDeviceMeshId, "ELA must have a valid skeletalMesh.");
 
@@ -123,12 +123,12 @@ function Berlin_ELA:onBodyCreated()
 end;
 
 --- Called when this vehicle is virtualized
-function Berlin_ELA:onBodyDestroyed()
+function SampleMod_Berlin_ELA:onBodyDestroyed()
 	-- reset some of the variables
 	self.elaDevice = nil;
 end;
 
-function Berlin_ELA:updateMaterial()
+function SampleMod_Berlin_ELA:updateMaterial()
 	if self.elaDevice == nil then
 		return;
 	end;
@@ -142,7 +142,7 @@ end;
 --- Callback when the button for up down was pressed so the ela number is half set
 ---@param buttonIndex integer
 ---@param direction -1|1
-function Berlin_ELA:onButtonPressed(buttonIndex, direction)
+function SampleMod_Berlin_ELA:onButtonPressed(buttonIndex, direction)
 	local currentNumber		= self.elaDeviceNo[buttonIndex];
 	currentNumber			= currentNumber + direction/2;
 
@@ -153,7 +153,7 @@ end;
 --- Callback when the button for up down was released so the ela number is full set
 ---@param buttonIndex integer
 ---@param direction -1|1
-function Berlin_ELA:onButtonReleased(buttonIndex, direction)
+function SampleMod_Berlin_ELA:onButtonReleased(buttonIndex, direction)
 	local currentNumber = self.elaDeviceNo[buttonIndex] + direction/2;
 	if direction > 0 then
 		currentNumber = currentNumber % 10;
@@ -170,7 +170,7 @@ end;
 --- Parses the current ela number into a 4-digit integer
 ---@return integer routeId
 ---@nodiscard
-function Berlin_ELA:parseRouteNumber()
+function SampleMod_Berlin_ELA:parseRouteNumber()
 	local routeId		= 0;
 	for index, value in ipairs(self.elaDeviceNo) do
 		routeId			= routeId + (clamp(math.floor(value), 0, 9) * math.pow(10, 4-index));
@@ -178,8 +178,8 @@ function Berlin_ELA:parseRouteNumber()
 	return routeId;
 end;
 
-function Berlin_ELA:onButtonEnter()
-	if not self.a3l92CabModule:isActiveCab() then
+function SampleMod_Berlin_ELA:onButtonEnter()
+	if not self.SampleMod_A3L92CabModule:isActiveCab() then
 		return;
 	end;
 	if self.routeId == 0 then
@@ -190,8 +190,8 @@ function Berlin_ELA:onButtonEnter()
 	self.enteredRouteId = self.routeId;
 end;
 
-function Berlin_ELA:onButtonAnnouncementToBoard()
-	if not self.a3l92CabModule:isActiveCab() then
+function SampleMod_Berlin_ELA:onButtonAnnouncementToBoard()
+	if not self.SampleMod_A3L92CabModule:isActiveCab() then
 		return;
 	end;
 	if self.elaAnnouncement then
@@ -202,12 +202,12 @@ function Berlin_ELA:onButtonAnnouncementToBoard()
 end;
 
 
-function Berlin_ELA:logIn()
+function SampleMod_Berlin_ELA:logIn()
 	local elaOrientation 	= ifelse(self.cab:getCabOrientation() == -1 ,2, 1);
 
 	local map			= g_scenario.map:cast(MapBerlin);
 	if map == nil then
-		print("[Berlin_ELA] Can't login on a non-Berlin map.");
+		print("[SampleMod_Berlin_ELA] Can't login on a non-Berlin map.");
 		return;
 	end;
 	local trainComposition = self.vehicle:getTrainComposition();
@@ -232,7 +232,7 @@ function Berlin_ELA:logIn()
 	trainComposition:onPISInfoUpdated(timetablePIS and timetablePIS:getTimetablePIS() or nil, 1, true);
 end;
 
-function Berlin_ELA:logOff()
+function SampleMod_Berlin_ELA:logOff()
 	-- just remove the PIS timetable
 	local trainComposition		= self.cab:getVehicle():getTrainComposition();
 	trainComposition:onPISInfoUpdated(nil, 1, true);
@@ -241,7 +241,7 @@ end;
 --- Returns if the player was asked by a task to do an ELA login (if `logoff` is `false`) or an ELA logout (if `logoff` is `true`)
 ---@param logoff boolean
 ---@return boolean
-function Berlin_ELA:wasAskedByTask(logoff)
+function SampleMod_Berlin_ELA:wasAskedByTask(logoff)
 	if g_scenario.currentTask == nil then
 		return false;
 	end;
@@ -254,14 +254,14 @@ end;
 
 --- Plays a sound as response to the successful / failed login
 ---@param successful boolean
-function Berlin_ELA:loginResponse(successful)
+function SampleMod_Berlin_ELA:loginResponse(successful)
 	if successful then
-		printf("[Berlin_ELA] ELA Login was successful (%d)", self.routeId);
+		printf("[SampleMod_Berlin_ELA] ELA Login was successful (%d)", self.routeId);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Enter"], 1);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Error"], 0);
 		GameplayStatics.spawnSound2D("/SubwaySim_Berlin/Vehicles/A3L92/Audio/Misc/ELA_beep.ELA_beep");
 	else
-		printf("[Berlin_ELA] ELA Login was not successful (%d)", self.routeId);
+		printf("[SampleMod_Berlin_ELA] ELA Login was not successful (%d)", self.routeId);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Enter"], 0);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Error"], 1);
 		GameplayStatics.spawnSound2D("/SubwaySim_Berlin/Vehicles/A3L92/Audio/Misc/ELA_beep_routeFinished.ELA_beep_routeFinished");
@@ -272,7 +272,7 @@ end;
 ---@return Station? station
 ---@return string platformNo
 ---@return 1|2 direction
-function Berlin_ELA:getLocation()
+function SampleMod_Berlin_ELA:getLocation()
 	local station, platform	= self.vehicle:getCurrentStation();
 	if station == nil or platform == nil then
 		return nil, "", 1;
@@ -298,15 +298,15 @@ function Berlin_ELA:getLocation()
 	return station, tostring(platform.number), direction;
 end;
 
-function Berlin_ELA:onSpeakerButton()
-	if not self.a3l92CabModule:isActiveCab() then
+function SampleMod_Berlin_ELA:onSpeakerButton()
+	if not self.SampleMod_A3L92CabModule:isActiveCab() then
 		return;
 	end;
 	self.elaSpeakerActive		= true;
 end;
 
 --- Called by BaseCab upon activating the cab
-function Berlin_ELA:onCabActivated()
+function SampleMod_Berlin_ELA:onCabActivated()
 	-- do not turn ELA on if this vehicle is AI controlled
 	if self.vehicle:getIsAIControlled() or self.vehicle.isVirtual then
 		if self.vehicle:getIsAIControlled() then
@@ -317,13 +317,13 @@ function Berlin_ELA:onCabActivated()
 end;
 
 --- Called by BaseCab upon deactivating the cab
-function Berlin_ELA:onCabDeactivated()
+function SampleMod_Berlin_ELA:onCabDeactivated()
 	self.elaAnnouncement 			= false;
 	self.elaAnnouncementAutomatic	= false;
 	self.elaSpeakerActive			= false;
 end;
 
-function Berlin_ELA:onAiCabActivated()
+function SampleMod_Berlin_ELA:onAiCabActivated()
 	local routeId = 0;
 	local trainComposition		= self.vehicle:getTrainComposition();
 	local timetable = trainComposition:getTimetable();
@@ -349,7 +349,7 @@ end
 
 --- Tick function
 ---@param dt number delta time [seconds]
-function Berlin_ELA:update(dt)
+function SampleMod_Berlin_ELA:update(dt)
 	--if not self.isOn or self.vehicle.isVirtual then
 	if self.vehicle.isVirtual and self.elaDevice == nil then
 		return;
@@ -379,7 +379,7 @@ end;
 
 --- This is called any time the train composition's timetable has changed
 ---@param newTimetable Timetable?
-function Berlin_ELA:onTimetableChanged(newTimetable)
+function SampleMod_Berlin_ELA:onTimetableChanged(newTimetable)
 	if not self.vehicle:getIsAIControlled() then
 		return;
 	end;
@@ -396,6 +396,6 @@ end;
 --- Function to focus the given button in instruction HUD
 ---@param buttonName string
 ---@return BaseInteractable interactable?
-function Berlin_ELA:getButton(buttonName)
+function SampleMod_Berlin_ELA:getButton(buttonName)
 	return self.cab.interactables[buttonName];
 end;

@@ -1,7 +1,7 @@
 --
 --
 -- Simuverse_SampleModVehicle
--- Module A3L92Component.lua
+-- Module SampleMod_A3L92Component.lua
 --
 -- Component for any vehicle-specific features in A3L92
 --
@@ -19,37 +19,44 @@
 --
 --
 
----@class A3L92Component : RailVehicleComponent
-A3L92Component = Class("A3L92Component", A3L92Component);
+---@class SampleMod_A3L92Component : RailVehicleComponent
+SampleMod_A3L92Component = Class("SampleMod_A3L92Component", SampleMod_A3L92Component);
 
----@class A3L92Component_DataTable
+---@class SampleMod_A3L92Component_DataTable
+---@field isKWaggon boolean?
 
 --- Creates a new instance of this component
 ---@param vehicle RailVehicle
-function A3L92Component:new(vehicle)
-	self			= A3L92Component:emptyNew();
+function SampleMod_A3L92Component:new(vehicle)
+	self			= SampleMod_A3L92Component:emptyNew();
 	self.vehicle	= vehicle;
+
+	self.isKWaggon 	= false;
 
 	return self;
 end;
 
 --- Called whenever this vehicle has received a new physical body
-function A3L92Component:onBodyCreated()
-	---@type A3L92Component_DataTable?
-	local dataTable				= self.vehicle.dataTable["A3L92Component"];
+function SampleMod_A3L92Component:onBodyCreated()
+	---@type SampleMod_A3L92Component_DataTable?
+	local dataTable				= self.vehicle.dataTable["SampleMod_A3L92Component"];
 	if dataTable == nil then
 		return;
 	end;
+
+	self.isKWaggon = dataTable.isKWaggon or false;
+	-- debugprint("[SampleMod_A3L92Component] isKWaggon: %s",self.isKWaggon)
 end;
 
 --- Called whenever this vehicle's physical body is destroyed
-function A3L92Component:onBodyDestroyed()
+function SampleMod_A3L92Component:onBodyDestroyed()
+	self.isKWaggon = false;
 end;
 
 
 
 --- Update function, called every tick
-function A3L92Component:update(dt)
+function SampleMod_A3L92Component:update(dt)
 	-- don't update for AI trains
 	if not self.vehicle:hasPlayerEnteredCab() then
 		return;
@@ -59,13 +66,13 @@ end;
 --- Called by the station as soon as the train has entered the platform.
 ---@param station Station
 ---@param platformNumber string
-function A3L92Component:onPlatformEntered(station, platformNumber)
+function SampleMod_A3L92Component:onPlatformEntered(station, platformNumber)
 
 end;
 
 --- Called by the station as soon as the train is leaving the platform.
 ---@param station Station
 ---@param platformNumber string
-function A3L92Component:onPlatformLeft(station, platformNumber)
+function SampleMod_A3L92Component:onPlatformLeft(station, platformNumber)
 
 end;

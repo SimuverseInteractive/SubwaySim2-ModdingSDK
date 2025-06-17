@@ -8204,6 +8204,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SubwaySim_Extern/Simuverse_SampleModScenario/Simuverse_SampleModScenario.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/SubwaySim_Extern/SubwaySim2_Modding/SubwaySim2_Modding.uplugin",
 			"Type": "UFS"
 		},
@@ -31785,6 +31789,7 @@
 		"SignificanceManager",
 		"Simuverse_City",
 		"Simuverse_Rail",
+		"Simuverse_SampleModScenario",
 		"SkeletalReduction",
 		"SmartObjects",
 		"SoundFields",

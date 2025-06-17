@@ -20,7 +20,7 @@
 --
 
 InitializeClassReference("Berlin_PIS",						Berlin_PIS);
-InitializeClassReference("Berlin_ELA",						Berlin_ELA);
+InitializeClassReference("SampleMod_Berlin_ELA",						SampleMod_Berlin_ELA);
 InitializeClassReference("TaskEnterELACode",				TaskEnterELACode);
 InitializeClassReference("TaskEnterCab",					TaskEnterCab);
 InitializeClassReference("TaskActivateCab",					TaskActivateCab);
@@ -346,7 +346,7 @@ local function cab()
 	---@class RailVehicle_DataTable_CabData : A3L92CabModule_DataTable
 	---@type RailVehicle_DataTable_CabData
 	return {
-		cabModules		= { A3L92CabModule, Berlin_ELA, Berlin_Fahrsperre, Sifa, },
+		cabModules		= { SampleMod_A3L92CabModule, SampleMod_Berlin_ELA, Berlin_Fahrsperre, Sifa, },
 		interiorCamera	= {
 			cameraName	= "CabCamera",
 		},
@@ -730,7 +730,7 @@ local function cab()
 							pis:onSpeakerButton(EPIS_SpeakerType.Interior, isDown);
 						end;
 						if isDown then
-							local ela = cab:getModule(Berlin_ELA);
+							local ela = cab:getModule(SampleMod_Berlin_ELA);
 							if ela ~= nil then
 								ela:onSpeakerButton();
 							end;
@@ -929,7 +929,7 @@ local function cab()
 			},
 		},
 		---@type A3L92CabModule_DataTable
-		A3L92CabModule = {
+		SampleMod_A3L92CabModule = {
 			agFeedPipe = {
 				boneName	= "PressureGaugeNeedle1",
 				valueMin	= 0,
@@ -1030,7 +1030,7 @@ local A3L92_S = {
 		Berlin_PIS,
 		A3L92_AudioComponent,
 		LightManager,
-		A3L92Component,
+		SampleMod_A3L92Component,
 		WeatherComponent,
 		RepaintComponent,
 	},
@@ -1637,7 +1637,7 @@ local A3L92_S = {
 	},
 
 	---@type A3L92Component_DataTable
-	A3L92Component = {
+	SampleMod_A3L92Component = {
 		isKWaggon = false;
 	},
 	weatherComponents = {
