@@ -1,0 +1,6 @@
+{
+	"Lua.workspace.library": [
+		"..\\..\\..\\..\\Lua\\",
+		"..\\..\\SubwaySim2_Core\\Lua\\"
+	]
+}
