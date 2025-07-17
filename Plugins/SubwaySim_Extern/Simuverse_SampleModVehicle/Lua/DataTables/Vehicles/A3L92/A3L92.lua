@@ -1454,24 +1454,18 @@ local A3L92_S = {
 	},
 
 	repaint = {
-		parameterName	= "RepaintAlbedo",
-		skeletalMeshes	= {
-			"Exterior",
-		},
 		repaintNames = {
-			["RepaintBodyExterior"] =
-			{
+			["RepaintBodyExterior"] = {
 				{
 					mesh 	= "Exterior",
-					slots 	= {"A3L92-Repaint", "A3L92-RepaintGlass", },
+					slots 	= { "A3L92-Repaint", "A3L92-RepaintGlass", },
 					parameterName = "RepaintAlbedo",
 				},
 			},
-			["RepaintDecalExterior"] =
-			{
+			["RepaintDecalExterior"] = {
 				{
 					mesh = "Exterior",
-					slots = {"A3L92-Decals", },
+					slots = { "A3L92-Decals", },
 					parameterName = "AlbedoTexture",
 				},
 			},
@@ -1757,7 +1751,7 @@ local A3L92_Group = {
 	title 			= "SampleModVehicle",
 	author 			= "$GameDeveloper",
 
-	compatibleMaps 	= {"Berlin"},
+	compatibleMaps 	= {"Berlin", "SampleModMap"},
 
 	description 	= "$SSB_UI_Vehicle_A3L92_Description",
 	infos 			= "$SSB_UI_Vehicle_A3L92_Infos",
@@ -1772,7 +1766,7 @@ local A3L92_1x = {
 	title			= "Sample Mod Vehicle x1",
 	author			= "$GameDeveloper",
 
-	compatibleMaps = {"Berlin"},
+	compatibleMaps = {"Berlin", "SampleModMap"},
 	vehicleGroup 	= "Berlin_SampleModVehicle_Group",
 
 	-- not required for AI trains
@@ -1795,7 +1789,7 @@ local A3L92_2x = {
 	title			= "Sample Mod Vehicle x2",
 	author			= "$GameDeveloper",
 
-	compatibleMaps = {"Berlin"},
+	compatibleMaps = {"Berlin", "SampleModMap"},
 	vehicleGroup 	= "Berlin_SampleModVehicle_Group",
 
 	-- not required for AI trains
@@ -1821,7 +1815,7 @@ local A3L92_3x = {
 	title			= "Sample Mod Vehicle x3",
 	author			= "$GameDeveloper",
 
-	compatibleMaps = {"Berlin"},
+	compatibleMaps = {"Berlin", "SampleModMap"},
 	vehicleGroup 	= "Berlin_SampleModVehicle_Group",
 
 	-- not required for AI trains
@@ -1852,7 +1846,7 @@ local A3L92_4x = {
 	title			= "Sample Mod Vehicle x4",
 	author			= "$GameDeveloper",
 
-	compatibleMaps = {"Berlin"},
+	compatibleMaps = {"Berlin", "SampleModMap"},
 	vehicleGroup 	= "Berlin_SampleModVehicle_Group",
 
 	-- not required for AI trains
