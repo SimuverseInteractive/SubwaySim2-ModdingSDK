@@ -28,9 +28,9 @@ return {
 	targetGame		= "SubwaySim2",
 
 	scripts			= {
-		"DataTables/Vehicles/A3L92/A3L92Component.lua",
-		"DataTables/Vehicles/A3L92/A3L92CabModule.lua",
-		"DataTables/Vehicles/A3L92/Berlin_ELA.lua",
-		"DataTables/Vehicles/A3L92/A3L92.lua",
+		"DataTables/Vehicles/A3L92/SampleMod_A3L92Component.lua",
+		"DataTables/Vehicles/A3L92/SampleMod_A3L92CabModule.lua",
+		"DataTables/Vehicles/A3L92/SampleMod_Berlin_ELA.lua",
+		"DataTables/Vehicles/A3L92/SampleMod_A3L92.lua",
 	},
 };

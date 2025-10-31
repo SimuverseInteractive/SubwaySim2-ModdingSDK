@@ -268,36 +268,6 @@ function SampleMod_Berlin_ELA:loginResponse(successful)
 	end
 end;
 
---- Returns the current vehicle location and direction (in terms of station, platform and direction)
----@return Station? station
----@return string platformNo
----@return 1|2 direction
-function SampleMod_Berlin_ELA:getLocation()
-	local station, platform	= self.vehicle:getCurrentStation();
-	if station == nil or platform == nil then
-		return nil, "", 1;
-	end;
-
-	-- let's find out in which direction our cab is pointing
-	local trainComposition		= self.vehicle:getTrainComposition();
-
-	-- find the last signal that was set for this route
-	local nextSignal			= g_controlCenter:getNextSignalAlongRoute(trainComposition);
-	if nextSignal == nil then
-		return nil, "", 1;
-	end;
-
-	-- using the signal's forward seems a bit weird, but is actually okay because we assume
-	-- that there is a signal directly after every station.
-	local s_location, s_forward	= nextSignal:getLocation();
-
-	-- check if these are aligned with the platform
-	local platformDirection		= (platform.platformEnd - platform.platformBegin):normalized();
-	local direction				= ifelse(Vector3.dotProduct(s_forward, platformDirection) >= 0, 1, 2);
-
-	return station, tostring(platform.number), direction;
-end;
-
 function SampleMod_Berlin_ELA:onSpeakerButton()
 	if not self.SampleMod_A3L92CabModule:isActiveCab() then
 		return;

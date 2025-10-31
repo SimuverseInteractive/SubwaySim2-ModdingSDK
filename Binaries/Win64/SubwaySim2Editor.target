@@ -22,262 +22,6 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnreal.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnreal.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnrealEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnrealEditor.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-UnrealBaseGame.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-UnrealBaseGame.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/Binaries/Win64/UnrealEditor-AsyncLoadingScreen.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/Binaries/Win64/UnrealEditor-AsyncLoadingScreen.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSS.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSS.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSBlueprint.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSBlueprint.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSEditor.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSUtility.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSUtility.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D11RHI.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D11RHI.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D12RHI.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D12RHI.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXRHI.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXRHI.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHI.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHI.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHIPreInit.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHIPreInit.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/Binaries/Win64/UnrealEditor-GamepadUMGPlugin.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/Binaries/Win64/UnrealEditor-GamepadUMGPlugin.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/LuaNetworking/Binaries/Win64/UnrealEditor-LuaNetworking.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/LuaNetworking/Binaries/Win64/UnrealEditor-LuaNetworking.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/LuaNetworking/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISBlueprint.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISBlueprint.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISCore.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISCore.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISShaders.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISShaders.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRail.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRail.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRailEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRailEditor.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Steamworks/Binaries/Win64/UnrealEditor-Steamworks.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Steamworks/Binaries/Win64/UnrealEditor-Steamworks.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Steamworks/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/Binaries/Win64/UnrealEditor-TextureResizeSC.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/Binaries/Win64/UnrealEditor-TextureResizeSC.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/Binaries/Win64/UnrealEditor-UnrealAchievements.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/Binaries/Win64/UnrealEditor-UnrealAchievements.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJIT.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJIT.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJITEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJITEditor.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/Binaries/Win64/UnrealEditor-WindowsHIDInput.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/Binaries/Win64/UnrealEditor-WindowsHIDInput.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/AgentInterface.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -4578,18 +4322,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Developer/PlasticSourceControl/Binaries/Win64/UnrealEditor-PlasticSourceControl.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/PlasticSourceControl/Binaries/Win64/UnrealEditor-PlasticSourceControl.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/PlasticSourceControl/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Developer/PluginUtils/Binaries/Win64/UnrealEditor-PluginUtils.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -6239,74 +5971,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Interchange/Runtime/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RD.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RD.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderBlueprint.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderBlueprint.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderDebuggerSupport.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderDebuggerSupport.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderGameControl.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderGameControl.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLC.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLC.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLink.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLink.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLogging.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLogging.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderShaderInfo.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderShaderInfo.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -8144,97 +7808,289 @@
 		{
 			"Path": "$(EngineDir)/Plugins/XGEController/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnreal.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnreal.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnrealEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-SimuverseUnrealEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-UnrealBaseGame.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-UnrealBaseGame.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/Binaries/Win64/UnrealEditor-AsyncLoadingScreen.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/Binaries/Win64/UnrealEditor-AsyncLoadingScreen.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSS.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSS.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSBlueprint.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSBlueprint.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSUtility.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-DLSSUtility.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D11RHI.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D11RHI.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D12RHI.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXD3D12RHI.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXRHI.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXRHI.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHI.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHI.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHIPreInit.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor-NGXVulkanRHIPreInit.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/Binaries/Win64/UnrealEditor-GamepadUMGPlugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/Binaries/Win64/UnrealEditor-GamepadUMGPlugin.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/LuaNetworking/Binaries/Win64/UnrealEditor-LuaNetworking.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/LuaNetworking/Binaries/Win64/UnrealEditor-LuaNetworking.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/LuaNetworking/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISBlueprint.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISBlueprint.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISCore.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISCore.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISShaders.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor-NISShaders.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/PlasticSourceControl/Binaries/Win64/UnrealEditor-PlasticSourceControl.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/PlasticSourceControl/Binaries/Win64/UnrealEditor-PlasticSourceControl.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/PlasticSourceControl/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseDLC/Binaries/Win64/UnrealEditor-SimuverseDLC.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseDLC/Binaries/Win64/UnrealEditor-SimuverseDLC.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseDLC/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRail.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRail.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRailEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor-SimuverseRailEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Steamworks/Binaries/Win64/UnrealEditor-Steamworks.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Steamworks/Binaries/Win64/UnrealEditor-Steamworks.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Steamworks/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/Binaries/Win64/UnrealEditor-TextureResizeSC.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/Binaries/Win64/UnrealEditor-TextureResizeSC.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/Binaries/Win64/UnrealEditor-UnrealAchievements.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/Binaries/Win64/UnrealEditor-UnrealAchievements.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJIT.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJIT.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJITEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor-UnrealLuaJITEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/Binaries/Win64/UnrealEditor-WindowsHIDInput.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/Binaries/Win64/UnrealEditor-WindowsHIDInput.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
 		}
 	],
 	"RuntimeDependencies": [
-		{
-			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/AsyncLoadingScreen.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/Development/nvngx_dlss.dll",
-			"Type": "DebugNonUFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/Development/nvngx_dlssd.dll",
-			"Type": "DebugNonUFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/nvngx_dlss.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/nvngx_dlssd.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/DLSS/DLSS.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/GamepadUMGPlugin.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/LuaNetworking/LuaNetworking.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/NIS/NIS.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_City/Simuverse_City.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Simuverse_Rail.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Steamworks/Source/ThirdParty/Binaries/Win64/steam_api64.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/Steamworks/Steamworks.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SubwaySim_Content/SubwaySim2_Core/SubwaySim2_Core.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SubwaySim_Extern/Simuverse_SampleModScenario/Simuverse_SampleModScenario.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SubwaySim_Extern/SubwaySim2_Modding/SubwaySim2_Modding.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/TextureResizeSC.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/UnrealAchievements.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Source/ThirdParty/Binaries/Win64/lua51.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/UnrealLuaJIT.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/WindowsHIDInput.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/SubwaySim2.uproject",
-			"Type": "UFS"
-		},
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
 			"Type": "NonUFS"
@@ -30808,10 +30664,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Developer/PlasticSourceControl/PlasticSourceControl.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Developer/PluginUtils/PluginUtils.uplugin",
 			"Type": "UFS"
 		},
@@ -31173,10 +31025,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Interchange/Runtime/Interchange.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/RiderLink.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -31594,6 +31442,102 @@
 		{
 			"Path": "$(EngineDir)/Plugins/XGEController/XGEController.uplugin",
 			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AsyncLoadingScreen/AsyncLoadingScreen.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/Development/nvngx_dlss.dll",
+			"Type": "DebugNonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/Development/nvngx_dlssd.dll",
+			"Type": "DebugNonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/nvngx_dlss.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/Binaries/ThirdParty/Win64/nvngx_dlssd.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DLSS/DLSS.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/GamepadUMGPlugin/GamepadUMGPlugin.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/LuaNetworking/LuaNetworking.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/NIS/NIS.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/PlasticSourceControl/PlasticSourceControl.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseDLC/SimuverseDLC.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_City/Simuverse_City.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Simuverse_Content/Simuverse_Rail/Simuverse_Rail.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Steamworks/Source/ThirdParty/Binaries/Win64/steam_api64.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Steamworks/Steamworks.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubwaySim_Content/SubwaySim2_Core/SubwaySim2_Core.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubwaySim_Extern/Simuverse_SampleModScenario/Simuverse_SampleModScenario.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubwaySim_Extern/SubwaySim2_Modding/SubwaySim2_Modding.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/TextureResizeSC/TextureResizeSC.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealAchievements/UnrealAchievements.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/Source/ThirdParty/Binaries/Win64/lua51.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealLuaJIT/UnrealLuaJIT.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/WindowsHIDInput/WindowsHIDInput.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/SubwaySim2.uproject",
+			"Type": "UFS"
 		}
 	],
 	"BuildPlugins": [
@@ -31779,7 +31723,6 @@
 		"RenderDocPlugin",
 		"RenderGraphInsights",
 		"ResonanceAudio",
-		"RiderLink",
 		"RiderSourceCodeAccess",
 		"RigLogic",
 		"RigVM",
@@ -31787,6 +31730,7 @@
 		"SequencerAnimTools",
 		"SequencerScripting",
 		"SignificanceManager",
+		"SimuverseDLC",
 		"Simuverse_City",
 		"Simuverse_Rail",
 		"Simuverse_SampleModScenario",

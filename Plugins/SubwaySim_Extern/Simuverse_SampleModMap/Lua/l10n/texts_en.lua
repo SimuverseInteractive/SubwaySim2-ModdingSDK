@@ -22,7 +22,7 @@
 -- please use this language for every line. That makes it much easier to translate the files.
 local lang = "en";
 
-g_l10n:addText(lang,	"SampleModMap_StationName_A",					"Adlerhain");
-g_l10n:addText(lang,	"SampleModMap_StationName_B",					"Birkenau");
-g_l10n:addText(lang,	"SampleModMap_StationName_C",					"Charlottenfeld");
-g_l10n:addText(lang,	"SampleModMap_StationName_D",					"Depot");
+g_l10n:addText(lang,	"mods.Simuverse_SampleModMap.SampleModMap_StationName_A",					"Adlerhain");
+g_l10n:addText(lang,	"mods.Simuverse_SampleModMap.SampleModMap_StationName_B",					"Birkenau");
+g_l10n:addText(lang,	"mods.Simuverse_SampleModMap.SampleModMap_StationName_C",					"Charlottenfeld");
+g_l10n:addText(lang,	"mods.Simuverse_SampleModMap.SampleModMap_StationName_D",					"Depot");

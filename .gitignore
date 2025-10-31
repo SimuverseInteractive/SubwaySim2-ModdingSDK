@@ -1,6 +1,6 @@
 /Build/
 /Intermediate/
 /Output/
+/DerivedDataCache/
 **/Saved/
-
 **/.vscode/

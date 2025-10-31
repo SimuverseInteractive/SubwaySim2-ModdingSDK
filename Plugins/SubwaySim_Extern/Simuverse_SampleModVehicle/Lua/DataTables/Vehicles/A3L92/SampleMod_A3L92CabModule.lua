@@ -414,7 +414,7 @@ end;
 
 --- is called from the HUD
 ---@return number
-function SampleMod_A3L92CabModule:getSelectedAfbSpeed()
+function SampleMod_A3L92CabModule:getSelectedSpeed()
 	return self._afbValue;
 end;
 

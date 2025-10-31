@@ -23,7 +23,7 @@ InitializeClassReference("MapBerlin", MapBerlin);
 ---@class MapSampleModMap : MapBerlin, BaseMap
 MapSampleModMap = Class("MapSampleModMap", MapSampleModMap, MapBerlin);
 
----@type Map_DataTable
+---@type SSB_Map_DataTable
 local SampleModMap_DataTable = {
 	contentType		= "map",
 	contentName		= "SampleModMap",

@@ -20,7 +20,7 @@
 --
 
 InitializeClassReference("Berlin_PIS",						Berlin_PIS);
-InitializeClassReference("SampleMod_Berlin_ELA",						SampleMod_Berlin_ELA);
+InitializeClassReference("SampleMod_Berlin_ELA",			SampleMod_Berlin_ELA);
 InitializeClassReference("TaskEnterELACode",				TaskEnterELACode);
 InitializeClassReference("TaskEnterCab",					TaskEnterCab);
 InitializeClassReference("TaskActivateCab",					TaskActivateCab);
@@ -395,7 +395,7 @@ local function cab()
 							inputKey		= "Cab_lvThrottleHalf",
 						},
 						{
-							name			= "$Berlin_ia_CabThrottleLeverAcc100",
+							name			= "$SSB_ia_CabThrottleLeverAcc100",
 							value			= 1,
 							thresholdArrive	= 0.0,
 							thresholdLeave	= 0.0,
@@ -464,7 +464,7 @@ local function cab()
 			iaCabSeat		= {
 				skeletalMesh = "Seat",
 				boneName 	= "SeatCube",
-				name		= "$HHA_DT5_ia_CabSeat",
+				name		= "$SSB_ia_CabSeat",
 				callback	= function(cab, isDown)
 					if isDown and cab.currentUser == nil then
 						cab:setCurrentUser(g_scenario.player);
@@ -797,7 +797,7 @@ local function cab()
 				},
 				btnDecoupling		= {
 					boneName		= "DecouplerArm",
-					name			= "$HHA_DT5_ia_TrainSeparate",
+					name			= "$SSB_ia_TrainSeparate",
 					posePressed		= Transform:new(Vector3:new(0,0,0), 	Vector3:new(0,0,10)),
 					poseReleased	= Transform:new(Vector3:new(0,0,0), 	Vector3:new(0,0,0)),
 					downSound		= getSound("btnDown"),
@@ -812,19 +812,19 @@ local function cab()
 			switches		= {
 				swActivateCab	= {
 					boneName 	= "Cab_Key",
-					name 		= "$Berlin_ia_CabKey",
+					name 		= "$SSB_ia_CabKey",
 					defaultPosition	= 1,
 					keyDown		= "Cab_swDeactivateCab",
 					keyUp		= "Cab_swActivateCab",
 					axis		= 1,
 					positions	= {
 						{
-							name	= "$HHA_DT5_ia_CabInactive",
+							name	= "$SSB_ia_CabInactive",
 							angle	= 0,
 							sound	= getSound("key"),
 						},
 						{
-							name	= "$HHA_DT5_ia_CabActive",
+							name	= "$SSB_ia_CabActive",
 							angle	= 90,
 							sound	= getSound("key"),
 						},
@@ -1112,7 +1112,7 @@ local A3L92_S = {
 							soundPath = getSound("SideCabDoorClosed"),
 						},
 						doorState = CabDoor_State.Closed,
-						doorStateText = "$HHA_DT5_ia_CabDoorClose",
+						doorStateText = "$SSB_ia_CabDoorClose",
 					},
 					{
 						animWithSound = {
@@ -1122,12 +1122,12 @@ local A3L92_S = {
 							soundPath = getSound("SideCabDoorOpen"),
 						},
 						doorState = CabDoor_State.FullOpen,
-						doorStateText = "$HHA_DT5_ia_CabDoorOpen",
+						doorStateText = "$SSB_ia_CabDoorOpen",
 					},
 				},
 				interactable = {
 					boneName = "CabDoor",
-					name = "$HHA_DT5_ia_CabDoor",
+					name = "$SSB_ia_CabDoor",
 					callback = function (door, isDown)
 						if not door:blockInteraction() and isDown then
 							local lastDoorState = door.doorState;
@@ -1147,7 +1147,7 @@ local A3L92_S = {
 									startTime = 1.9,
 								},
 								doorState = CabDoor_State.Closed,
-								doorStateText = "$HHA_DT5_ia_CabDoorClose",
+								doorStateText = "$SSB_ia_CabDoorClose",
 							},
 							{
 								animWithSound = {
@@ -1156,7 +1156,7 @@ local A3L92_S = {
 									rateScale = 1,
 								},
 								doorState = CabDoor_State.FullOpen,
-								doorStateText = "$HHA_DT5_ia_CabDoorOpen",
+								doorStateText = "$SSB_ia_CabDoorOpen",
 							},
 						},
 					},
@@ -1178,7 +1178,7 @@ local A3L92_S = {
 							soundPath = getSound("BackCabDoorClosed"),
 						},
 						doorState = CabDoor_State.Closed,
-						doorStateText = "$HHA_DT5_ia_CabDoorClose",
+						doorStateText = "$SSB_ia_CabDoorClose",
 					},
 					{
 						animWithSound = {
@@ -1188,12 +1188,12 @@ local A3L92_S = {
 							soundPath = getSound("BackCabDoorOpen"),
 						},
 						doorState = CabDoor_State.FullOpen,
-						doorStateText = "$HHA_DT5_ia_CabDoorOpen",
+						doorStateText = "$SSB_ia_CabDoorOpen",
 					},
 				},
 				interactable = {
 					boneName = "DoorCabIn",
-					name = "$HHA_DT5_ia_CabDoor",
+					name = "$SSB_ia_CabDoor",
 					callback = function (door, isDown)
 						if not door:blockInteraction() and isDown then
 							local lastDoorState = door.doorState;
@@ -1213,7 +1213,7 @@ local A3L92_S = {
 									startTime = 1.9,
 								},
 								doorState = CabDoor_State.Closed,
-								doorStateText = "$HHA_DT5_ia_CabDoorClose",
+								doorStateText = "$SSB_ia_CabDoorClose",
 							},
 							{
 								animWithSound = {
@@ -1222,7 +1222,7 @@ local A3L92_S = {
 									rateScale = 1,
 								},
 								doorState = CabDoor_State.FullOpen,
-								doorStateText = "$HHA_DT5_ia_CabDoorOpen",
+								doorStateText = "$SSB_ia_CabDoorOpen",
 							},
 						},
 					},
@@ -1244,7 +1244,7 @@ local A3L92_S = {
 							startTime = 1.9,
 						},
 						doorState = CabDoor_State.Closed,
-						doorStateText = "$HHA_DT5_ia_CabDoorClose",
+						doorStateText = "$SSB_ia_CabDoorClose",
 					},
 					{
 						animWithSound = {
@@ -1254,12 +1254,12 @@ local A3L92_S = {
 							soundPath = getSound("FrontCabDoorOpen"),
 						},
 						doorState = CabDoor_State.FullOpen,
-						doorStateText = "$HHA_DT5_ia_CabDoorOpen",
+						doorStateText = "$SSB_ia_CabDoorOpen",
 					},
 				},
 				interactable = {
 					boneName = "DoorFront",
-					name = "$HHA_DT5_ia_CabDoor",
+					name = "$SSB_ia_CabDoor",
 					callback = function (door, isDown)
 						if not door:blockInteraction() and isDown then
 							local lastDoorState = door.doorState;
@@ -1279,7 +1279,7 @@ local A3L92_S = {
 									startTime = 1.73333,
 								},
 								doorState = CabDoor_State.Closed,
-								doorStateText = "$HHA_DT5_ia_CabDoorClose",
+								doorStateText = "$SSB_ia_CabDoorClose",
 							},
 							{
 								animWithSound = {
@@ -1288,7 +1288,7 @@ local A3L92_S = {
 									rateScale = 1,
 								},
 								doorState = CabDoor_State.FullOpen,
-								doorStateText = "$HHA_DT5_ia_CabDoorOpen",
+								doorStateText = "$SSB_ia_CabDoorOpen",
 							},
 						},
 					},
@@ -1615,7 +1615,7 @@ local A3L92_S = {
 
 				sunvisor = {
 					boneName 		= "Sunvisor_Handle",
-					name			= "$HHA_DT5_ia_CabSunvisor",
+					name			= "$SSB_ia_CabSunvisor",
 					skeletalMesh 	= "Cab",
 					poseMax 		= Transform:new(Vector3:new(0.68, 0,0), Vector3:new(0,0,0)),
 					poseCurrent		= Transform:new(Vector3:new(0.15, 0,0), Vector3:new(0,0,0)),

@@ -59,6 +59,10 @@
 		{
 			"Name": "Simuverse_SampleModMap",
 			"Enabled": true
+		},
+		{
+			"Name": "Simuverse_SampleModScenario",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
