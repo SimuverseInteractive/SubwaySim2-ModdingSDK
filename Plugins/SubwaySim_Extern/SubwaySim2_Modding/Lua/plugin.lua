@@ -31,5 +31,23 @@ return {
 	targetGame		= "SubwaySim2",
 
 	scripts			= {
+		"Infrastructure/Signals/Class_SWSModding_MainSignal.lua",
+
+		-- MainSignals
+		"Infrastructure/Signals/SWSModding_AdvanceSignal_GY.lua",
+		"Infrastructure/Signals/SWSModding_AdvanceSignalTunnel_GY.lua",
+		"Infrastructure/Signals/SWSModding_MainSignal_GRY.lua",
+		"Infrastructure/Signals/SWSModding_MainSignal_SGRYSYG.lua",
+
+		-- TunnelSignals
+		"Infrastructure/Signals/SWSModding_MainSignalTunnel_GRY.lua",
+		"Infrastructure/Signals/SWSModding_MainSignalTunnel_SGRYSYG.lua",
+
+		-- DangerSignals
+		"Infrastructure/Signals/SWSModding_DangerSignal.lua",
+		"Infrastructure/Signals/SWSModding_DangerSignalTunnel.lua",
+
+		-- other signals
+		"Infrastructure/Signals/SWSModding_BufferStop.lua",
 	},
 };

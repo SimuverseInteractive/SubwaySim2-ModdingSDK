@@ -887,11 +887,11 @@ local function cab()
 						},
 					},
 					callback	= function(cab, position)
-						local lightManger 		= cab.railVehicle:getComponent(LightManager);
+						local lightManager 		= cab.railVehicle:getComponent(LightManager);
 						local cabOrientation 	= cab.cabOrientation;
-						if lightManger ~= nil then
-							lightManger:setHeadLightState(cabOrientation, 	ifelse(position == 3, EHeadlightState.Signal, EHeadlightState.Off), nil, 1);
-							lightManger:setTailLightState(-cabOrientation, 	position==1, nil, 1);
+						if lightManager ~= nil then
+							lightManager:setHeadLightState(cabOrientation, 	ifelse(position == 3, EHeadlightState.Signal, EHeadlightState.Off), nil, 1);
+							lightManager:setTailLightState(-cabOrientation, 	position==1, nil, 1);
 						end;
 					end,
 					interactableDirection = Vector3:new(0, 0.01, 0),
@@ -1622,7 +1622,7 @@ local A3L92_S = {
 					poseMin 		= Transform.identity,
 					callback 		= function (railVehicle, isMoved)
 						if isMoved then
-							GameplayStatics.spawnSound2D("/Simuverse_SampleModVehicle/A3L92/Audio/Misc/SunVisor-In.SunVisor-In");
+							GameplayStatics.playSound2D("/Simuverse_SampleModVehicle/A3L92/Audio/Misc/SunVisor-In.SunVisor-In");
 						end;
 					end,
 				},

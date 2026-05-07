@@ -101,7 +101,7 @@ end;
 
 --- Called when this vehicle has received a body.
 function SampleMod_Berlin_ELA:onBodyCreated()
-	local _elaDeviceMeshId		= Actor.getSceneComponent(self.vehicle,	self.elaData.elaDeviceMesh);
+	local _elaDeviceMeshId		= Actor.getSceneComponent(self.vehicle.vehicleBody,	self.elaData.elaDeviceMesh);
 	assert(_elaDeviceMeshId, "ELA must have a valid skeletalMesh.");
 
 	local _elaCoderMID 		= PrimitiveComponent.createMaterialInstanceDynamic(_elaDeviceMeshId, self.elaData.elaCoderMaterialSlot);
@@ -259,12 +259,12 @@ function SampleMod_Berlin_ELA:loginResponse(successful)
 		printf("[SampleMod_Berlin_ELA] ELA Login was successful (%d)", self.routeId);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Enter"], 1);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Error"], 0);
-		GameplayStatics.spawnSound2D("/SubwaySim_Berlin/Vehicles/A3L92/Audio/Misc/ELA_beep.ELA_beep");
+		GameplayStatics.playSound2D("/SubwaySim_Berlin/Vehicles/A3L92/Audio/Misc/ELA_beep.ELA_beep");
 	else
 		printf("[SampleMod_Berlin_ELA] ELA Login was not successful (%d)", self.routeId);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Enter"], 0);
 		MaterialInstanceDynamic.setScalar(self.elaDevice.elaLightsMID, self.elaLightsSlots["Error"], 1);
-		GameplayStatics.spawnSound2D("/SubwaySim_Berlin/Vehicles/A3L92/Audio/Misc/ELA_beep_routeFinished.ELA_beep_routeFinished");
+		GameplayStatics.playSound2D("/SubwaySim_Berlin/Vehicles/A3L92/Audio/Misc/ELA_beep_routeFinished.ELA_beep_routeFinished");
 	end
 end;
 

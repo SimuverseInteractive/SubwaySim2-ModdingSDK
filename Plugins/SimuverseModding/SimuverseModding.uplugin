@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"FriendlyName": "SimuverseModding",
+	"Version": 1,
+	"VersionName": "1.0",
+	"Description": "Modding Support for Unreal",
+	"Category": "Online Platform",
+	"CreatedBy": "Simuverse GmbH",
+	"CreatedByURL": "https://www.simuverse.at",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "SimuverseModdingEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}

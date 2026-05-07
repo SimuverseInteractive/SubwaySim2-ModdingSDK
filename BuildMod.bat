@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 rem ADJUST THE VARIABLES
 set DLC_NAME=Simuverse_SampleModMap
 set LEVEL_PATH=Level/SampleModMap
-set ENGINE_ROOT=C:\Program Files\Epic Games\UE_5.4
+set ENGINE_ROOT=C:\Program Files\Epic Games\UE_5.7
 rem ADJUST THE VARIABLES
 
 
@@ -26,7 +26,13 @@ rem Lua Import
 "%ENGINE_ROOT%/Engine/Binaries/Win64/UnrealEditor-Cmd.exe" "%CD%/SubwaySim2.uproject" -run=ImportAssets -AllowCommandletRendering -nosourcecontrol -replaceexisting -unattended -importSettings="%CD%/Plugins/UnrealLuaJIT/luaImport.json"
 
 rem Build Mod
-call "%ENGINE_ROOT%/Engine/Build/BatchFiles/RunUAT.bat" BuildCookRun -project="%CD%/SubwaySim2.uproject" -platform=Win64 -configuration=Shipping -build -skipbuild -cook -stage -pak -package -archive -archivedirectory="%CD%/Output" -dlcname=%DLC_NAME% -basedonreleaseversion=1.0 -DLCIncludeEngineContent
+call "%ENGINE_ROOT%/Engine/Build/BatchFiles/RunUAT.bat" BuildCookRun -project="%CD%/SubwaySim2.uproject" -platform=Win64 -configuration=Shipping -build -skipbuild -cook -stage -dlcname=%DLC_NAME% -basedonreleaseversion=1.0 -DLCIncludeEngineContent
+
+rem Copy Movies
+xcopy "%CD%\Plugins\SubwaySim_Extern\%DLC_NAME%\Content\Movies" "%CD%\Plugins\SubwaySim_Extern\%DLC_NAME%\Saved\Cooked\Windows\SubwaySim2\Plugins\SubwaySim_Extern\%DLC_NAME%\Content\Movies" /E /I /Y
+
+rem Package Mod
+call "%ENGINE_ROOT%/Engine/Build/BatchFiles/RunUAT.bat" BuildCookRun -project="%CD%/SubwaySim2.uproject" -platform=Win64 -configuration=Shipping -build -skipbuild -cook -skipcook -stage -skipstage -pak -package -archive -archivedirectory="%CD%/Output" -dlcname=%DLC_NAME% -basedonreleaseversion=1.0 -DLCIncludeEngineContent
 set ARCHIVE_PAK=%CD%\Output\Windows\SubwaySim2\Plugins\SubwaySim_Extern\%DLC_NAME%\Content\Paks\Windows\%DLC_NAME%SubwaySim2-Windows.pak
 if exist "%ARCHIVE_PAK%" (
     set SUCCESS=1

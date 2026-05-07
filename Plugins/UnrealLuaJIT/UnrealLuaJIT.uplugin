@@ -75,6 +75,10 @@
 		{
 			"Name": "SimuverseDLC",
 			"Enabled": true
+		},
+		{
+			"Name": "SimuverseModding",
+			"Enabled": true
 		}
 	]
 
