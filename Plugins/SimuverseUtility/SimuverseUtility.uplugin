@@ -1,0 +1,35 @@
+{
+	"FileVersion" : 1,
+	
+	"FriendlyName" : "SimuverseUtility",
+	"Version" : 1.0,
+	"VersionName" : "1.0",
+	"Description" : "Simuverse Utility Classes and Templates",
+	"Category" : "Utilities",
+	"CreatedBy" : "Simuverse GmbH",
+	"CreatedByURL" : "https://www.simuverse.at",
+	"EnabledByDefault" : true,
+
+	"Modules": [
+		{
+			"Name": "SimuverseUtilityWinOnly",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList" :
+			[
+				"Win64"
+			]
+		}
+	],
+	"LocalizationTargets": [],
+	"Plugins": [
+		{
+			"Name": "WindowsHIDInput",
+			"Enabled": true,
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
+

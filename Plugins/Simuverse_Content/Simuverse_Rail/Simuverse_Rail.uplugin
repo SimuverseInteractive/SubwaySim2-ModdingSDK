@@ -46,10 +46,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "Steamworks",
-			"Enabled": true
-		},
-		{
 			"Name": "GeoReferencing",
 			"Enabled": true
 		},

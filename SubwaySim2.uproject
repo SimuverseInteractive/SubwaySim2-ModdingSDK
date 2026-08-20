@@ -49,6 +49,30 @@
 			"Enabled": true
 		},
 		{
+			"Name": "Simuverse_City",
+			"Enabled": true
+		},
+		{
+			"Name": "SubwaySim_Berlin",
+			"Enabled": true
+		},
+		{
+			"Name": "SubwaySim_Berlin_G1E_NP",
+			"Enabled": true
+		},
+		{
+			"Name": "SubwaySim_Hamburg",
+			"Enabled": true
+		},
+		{
+			"Name": "SubwaySim_Hamburg_AL1_NP",
+			"Enabled": true
+		},
+		{
+			"Name": "SubwaySim2_Core",
+			"Enabled": true
+		},
+		{
 			"Name": "SubwaySim2_Modding",
 			"Enabled": true
 		},

@@ -8,7 +8,7 @@
 	"Category" : "Online Platform",
 	"CreatedBy" : "Simuverse GmbH",
 	"CreatedByURL" : "https://www.simuverse.at",
-	"EnabledByDefault" : false,
+	"EnabledByDefault" : true,
 
 	"Modules": [
 		{
@@ -19,7 +19,9 @@
 			[
 				"Win64",
 				"Mac",
-				"Linux"
+				"Linux",
+				"PS5",
+				"XSX"
 			]
 		},
 		{
@@ -37,13 +39,6 @@
 	"Plugins": [
 		{
 			"Name": "WindowsHIDInput",
-			"Enabled": true,
-			"PlatformAllowList": [
-				"Win64"
-			]
-		},
-		{
-			"Name": "Steamworks",
 			"Enabled": true,
 			"PlatformAllowList": [
 				"Win64"
@@ -79,6 +74,13 @@
 		{
 			"Name": "SimuverseModding",
 			"Enabled": true
+		},
+		{
+			"Name": "SimuverseUtility",
+			"Enabled": true,
+			"PlatformAllowList": [
+				"Win64"
+			]
 		}
 	]
 

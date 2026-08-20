@@ -14,8 +14,8 @@
 	{
 		"MajorVersion": 5,
 		"MinorVersion": 7,
-		"PatchVersion": 3,
-		"Changelist": 50162420,
+		"PatchVersion": 4,
+		"Changelist": 51494982,
 		"CompatibleChangelist": 47537391,
 		"IsLicenseeVersion": 0,
 		"IsPromotedBuild": 0,
@@ -9092,6 +9092,18 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseIO/Binaries/Win64/UnrealEditor-SimuverseIO.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseIO/Binaries/Win64/UnrealEditor-SimuverseIO.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseIO/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/SimuverseModding/Binaries/Win64/UnrealEditor-SimuverseModdingEditor.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -9101,6 +9113,18 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/SimuverseModding/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseUtility/Binaries/Win64/UnrealEditor-SimuverseUtilityWinOnly.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseUtility/Binaries/Win64/UnrealEditor-SimuverseUtilityWinOnly.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseUtility/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -34070,7 +34094,19 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseIO/SimuverseIO.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseIO/Source/ThirdParty/Binaries/Win64/PoKeysLib.dll",
+			"Type": "NonUFS"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/SimuverseModding/SimuverseModding.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SimuverseUtility/SimuverseUtility.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -34353,7 +34389,9 @@
 		"SequencerScripting",
 		"SignificanceManager",
 		"SimuverseDLC",
+		"SimuverseIO",
 		"SimuverseModding",
+		"SimuverseUtility",
 		"Simuverse_City",
 		"Simuverse_Rail",
 		"SkeletalMeshModelingTools",

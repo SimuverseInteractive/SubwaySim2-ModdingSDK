@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "SubwaySim_Hamburg_AL1_NP",
+	"Description": "Content for SubwaySim Hamburg AL1 NP",
+	"Category": "Other",
+	"CreatedBy": "Simuverse GmbH",
+	"CreatedByURL": "https://www.simuverse.at",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EnabledByDefault": false
+}
