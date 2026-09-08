@@ -41,7 +41,7 @@ local Berlin_ModScenario_Datatable = {
 };
 
 g_contentManager:addContent(Berlin_ModScenario_Datatable);
-	
+
 
 function Berlin_ModScenario:onScenarioStarted()
 	Berlin_ModScenario:parentClass().onScenarioStarted(self);
@@ -131,7 +131,6 @@ function Berlin_ModScenario:onScenarioStarted()
 				});
 				return false;									-- We always return false so the regular update is executed.
 			end;
-			
 		},
 		{
 			station				= map.stations.U,
@@ -177,7 +176,7 @@ function Berlin_ModScenario:onScenarioStarted()
 	tt3:setSourceTimetable(tt2);
 
 	local playerTasks = SSB_TaskStack:new();					-- Create new Task, that are the messages you get at the top left corner.
-	playerTasks:setTrainComposition(playerTrain);
+	playerTasks:setMainVehicle({ getTrainComposition = function() return playerTrain end});
 	playerTasks:generateFromTimetable(tt1, 2);					-- Generate tasks from tt1 and 2 following time tables.
 	self:startTask(playerTasks:getTask());
 
@@ -215,7 +214,4 @@ function Berlin_ModScenario:onScenarioStarted()
 	AItt:terminateAtStation("Ho", true, false, false);			-- Makes the AI train dissappear at this station.
 	AITrainComposition:setIsAIControlled(true);					-- So it is actuall an AI train.
 	AITrainComposition:assignTimetable(AItt);
-
-
-
 end;

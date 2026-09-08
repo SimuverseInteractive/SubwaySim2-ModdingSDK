@@ -184,7 +184,7 @@ function Hamburg_ModScenario:onScenarioStarted()
 	);
 
 	local playerTasks = SSB_TaskStack:new();					-- Create new Task, that are the messages you get at the top left corner.
-	playerTasks:setTrainComposition(playerTrain);
+	playerTasks:setMainVehicle({getTrainComposition = function() return playerTrain; end});
 	playerTasks:generateFromTimetable(tt1, 1);					-- Generate tasks from tt1 and 1 following time tables.
 	self:startTask(playerTasks:getTask());
 end;
@@ -192,7 +192,7 @@ end;
 function Hamburg_ModScenario.update(self, dt)					-- Overwrite the update function of this scenario.
 	Hamburg_ModScenario:parentClass().update(self, dt);			-- But still call the original update function so nothing brakes.
 
-	if not self.weatherChanged and self.environment ~= nil then
+	if not self.weatherChanged and self.environment ~= nil and self.timeForRain ~= nil then -- need these checks because this function may run a few times before the scenario start initialized our values
 		local minutes = self.environment.daytime;
 		if minutes ~= nil then
 			if minutes > self.timeForRain then
